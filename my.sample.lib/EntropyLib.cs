@@ -2,7 +2,7 @@
 
 namespace my.sample.lib
 {
-    public class Class1
+    public class EntropyLib
     {
         public static string getText()
         {
