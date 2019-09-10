@@ -9,12 +9,12 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
+    - name: Setup Nuget.exe
+      uses: warrenbuckley/Setup-Nuget@v1
     - name: Adds GPR Source
     - run:  nuget sources add -name "GPR2" -Source https://nuget.pkg.github.com/anangaur/index.json -Username anangaur -Password ${{ secrets.GITHUB_TOKEN }}
     - name: dotnet build
       run: dotnet build
-    - name: Setup Nuget.exe
-      uses: warrenbuckley/Setup-Nuget@v1
     - name: nuget push
       run: nuget push my.sample.lib\**\*.nupkg -Source "GPR" -SkipDuplicate
        
