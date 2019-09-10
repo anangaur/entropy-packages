@@ -12,4 +12,4 @@ jobs:
     - name: dotnet build
       run: dotnet build
     - name: dotnet push
-      run: dotnet nuget push my.sample.lib\**\*.nupkg -s "GPR" --user anangaur --password ${{ secrets.GITHUB_TOKEN }}
+      run: dotnet nuget push my.sample.lib\**\*.nupkg -s "GPR" -k ${{ secrets.GITHUB_TOKEN }}
