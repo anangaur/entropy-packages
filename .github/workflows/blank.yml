@@ -1,0 +1,15 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: dotnet build
+      run: dotnet build
+    - name: dotnet push
+      run: nuget push my.sample.lib\**\*.nupkg -Source "GPR" -User anangaur -Password ${{ secrets.GITHUB_TOKEN }}
