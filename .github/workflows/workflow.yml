@@ -14,5 +14,5 @@ jobs:
     - name: Setup Nuget.exe
       uses: warrenbuckley/Setup-Nuget@v1
     - name: nuget push
-      run: nuget push my.sample.lib\**\*.nupkg
+      run: nuget push my.sample.lib\**\*.nupkg -Source "GPR"
 
