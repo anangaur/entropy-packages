@@ -14,5 +14,7 @@ jobs:
     - name: Setup Nuget.exe
       uses: warrenbuckley/Setup-Nuget@v1
     - name: nuget push
-      run: nuget push my.sample.lib\**\*.nupkg -Source "GPR" -User anangaur -Password ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        nuget sources add -name "GPR2" -Source https://nuget.pkg.github.com/anangaur/index.json -Username anangaur -Password ${{ secrets.GITHUB_TOKEN }}
+        nuget push my.sample.lib\**\*.nupkg -Source "GPR2"
 
