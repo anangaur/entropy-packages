@@ -12,8 +12,4 @@
     <PackageProjectUrl>https://github.com/anangaur/entropy-packages</PackageProjectUrl>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
-  </ItemGroup>
-
 </Project>
