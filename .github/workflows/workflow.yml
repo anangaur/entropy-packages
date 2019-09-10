@@ -17,5 +17,4 @@ jobs:
       run: |
         nuget sources add -name "GPR2" -Source https://nuget.pkg.github.com/anangaur/index.json -Username anangaur -Password ${{ secrets.GITHUB_TOKEN }}
         nuget push my.sample.lib\**\*.nupkg -Source "GPR2" -SkipDuplicate
-        nuget push my.sample.lib\**\*.nupkg -Source "nuget.org" -ApiKey ${{secrets.NUGET_ORG_PUSH_ANANGAUR}} -SkipDuplicate
-
+       
