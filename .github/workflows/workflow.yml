@@ -16,5 +16,5 @@ jobs:
     - name: dotnet build
       run: dotnet build
     - name: dotnet push
-      run: dotnet nuget push my.sample.lib\**\*.nupkg -Source "GPR" -SkipDuplicate
+      run: dotnet nuget push my.sample.lib\**\*.nupkg -S "GPR" --Skip-Duplicate
        
