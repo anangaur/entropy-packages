@@ -15,6 +15,6 @@ jobs:
       run: nuget sources add -name "GPR" -Source https://nuget.pkg.github.com/anangaur/index.json -Username anangaur -Password ${{ secrets.GITHUB_TOKEN }} 
     - name: dotnet build
       run: dotnet build
-    - name: dotnet push
-      run: dotnet nuget push my.sample.lib\**\*.nupkg --source "GPR" --Skip-Duplicate
+    - name: nuget push
+      run: nuget push my.sample.lib\**\*.nupkg --source "GPR" --Skip-Duplicate
        
