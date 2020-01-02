@@ -9,8 +9,7 @@
     <Description>Sample library</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageProjectUrl>https://github.com/anangaur/entropy-packages</PackageProjectUrl>    
-    <RepositoryURL>https://github.com/anangaur/entropy-packages</RepositoryURL>
+    <PackageProjectUrl>https://github.com/anangaur/entropy-packages</PackageProjectUrl>   
     <PackageIconUrl>https://cdn.pixabay.com/photo/2016/03/31/19/28/experiment-1295041_960_720.png</PackageIconUrl>
   </PropertyGroup>
 
