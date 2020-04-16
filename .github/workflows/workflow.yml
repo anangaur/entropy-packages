@@ -14,7 +14,7 @@ jobs:
       run: dotnet --info
     - name: Add GPR Source using dotnet.exe      
       env:
-        DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+        DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
       run: dotnet nuget add source https://nuget.pkg.github.com/anangaur/index.json --name "GPR" -u anangaur  --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text
     - name: dotnet build
       run: dotnet build
