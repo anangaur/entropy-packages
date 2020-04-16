@@ -9,6 +9,7 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
+      name: Checkout
     - name: Get dotnet version
       uses: dotnet --info
     - name: Add GPR Source using dotnet.exe
