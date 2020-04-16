@@ -20,6 +20,6 @@ jobs:
       run: dotnet build
     - name: Setup NuGet.exe for use with actions
       uses: NuGet/setup-nuget@v1.0.2 
-    - name: Nuget push
-      run: nuget push 'my.sample.lib\**\*.nupkg' -source "GPR" -SkipDuplicate
+    - name: dotnet nuget push
+      run: dotnet nuget push 'my.sample.lib\**\*.nupkg' -source "GPR" -SkipDuplicate
 
