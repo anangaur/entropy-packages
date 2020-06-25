@@ -12,7 +12,15 @@
     <PackageProjectUrl>https://github.com/anangaur/entropy-packages</PackageProjectUrl>      
     <RepositoryURL>https://github.com/anangaur/entropy-packages</RepositoryURL>   
     <PackageIconUrl>https://cdn.pixabay.com/photo/2016/03/31/19/28/experiment-1295041_960_720.png</PackageIconUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
